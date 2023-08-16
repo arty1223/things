@@ -1,0 +1,14 @@
+[Unit]
+Description=csgosrv
+After=network.target
+
+[Service]
+WorkingDirectory=/home/arty/csgo/csgo
+
+User=arty
+Group=arty
+
+Restart=always
+ExecStart=bash -c "/usr/bin/screen -DmS update /usr/bin/bash /home/arty/csgo/steam/update.sh && /usr/bin/screen -DmS csgo /usr/bin/bash /home/arty/csgo/csgo/start128.sh"
+[Install]
+WantedBy=multi-user.target

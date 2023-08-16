@@ -1,0 +1,80 @@
+#cloud-config
+autoinstall:
+  identity:
+    hostname: ubuntu-server
+    password: $6$kOeY7XkM9IMDGsLT$w4by6r67gihmQcaOpXqwe1hG8YksuATQwJ17oUgU86XF2ohC9hiYcfICbZocXLEOfy5Gek2qZjvdpS9FYJaYw1
+    realname: admin
+    username: ubuntu
+  kernel:
+    package: linux-generic
+  keyboard:
+    layout: us
+    toggle: null
+    variant: ''
+  locale: en_US.UTF-8
+  ssh:
+    allow-pw: false
+    authorized-keys:
+    - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCbpRzoJkjBCv1BMx1bFj9KLvUk8bVu7H2XfR7eCgZGrEBp3kbWIXywuKZacbi61cBsbbzvrh9H8jTbmqRjTUstraP7bv+RSdcmhwUVxBsCFQAQQl1Swx2hRMv5AhDaysowRtEb5cIPWjsTKsw1kNnZvqb1D6dX/opIiVr6b5RO1VZZYZTLa/Q3ABvfgo1cfosP5rPk0a81d0ZXHDEpYjvVoQ2q2i1IrcCOdA+6pkr+Cl+11AbSPdGb63ki0ckjYE7KPmB1SC8vo1JdNA17HXSXUnmVhGJ844fEF0N152lR1aFg0npqefvuZpABanNeAdla7FX1x2kHR6jdwGC7hHDjaVb0ecaGbNolSK+zS+x2Q+c6OXD3qs0b0vf3+ZrC6eMbFOp6YxucvMywWNIflnSOAm8FwHX18Y1R59JULJM7MWQ57+CDAA0DoPWfWqNhRxcnoti+x50LhXno4LZ7relC19JvZxIYOiPdGC2q7Xm/hdrAAhSinIqaa3SNIfWHOChSxoKqhGk8YCZCQLcqyIVZagLhEzf9d/svriUP+8ayeeiGC1a8UU5uVna586acks0wAG05asxBybmESNQ50LSg7bUjx/Y/JVmkSdml1fMEYWPB06Na1Ceiy9ziOrA8iGS1uBDMQpWlK0t9ShuCzTPaoOmGAt4kxALzualwUALZqQ==
+      arty1223@github/75018509 # ssh-import-id gh:arty1223'
+    install-server: true
+  storage:
+    config:
+    - grub_device: true
+      id: disk-sda
+      name: ''
+      path: /dev/sda
+      preserve: false
+      ptable: gpt
+      type: disk
+      wipe: superblock-recursive
+    - device: disk-sda
+      flag: bios_grub
+      grub_device: false
+      id: partition-0
+      number: 1
+      preserve: false
+      size: 1048576
+      type: partition
+    - device: disk-sda
+      flag: swap
+      grub_device: false
+      id: partition-1
+      number: 2
+      preserve: false
+      size: 2147483648
+      type: partition
+      wipe: superblock
+    - fstype: swap
+      id: format-0
+      preserve: false
+      type: format
+      volume: partition-1
+    - device: format-0
+      id: mount-0
+      path: ''
+      type: mount
+    - device: disk-sda
+      flag: ''
+      grub_device: false
+      id: partition-2
+      number: 3
+      preserve: false
+      size: -1
+      type: partition
+      wipe: superblock
+    - fstype: ext4
+      id: format-1
+      preserve: false
+      type: format
+      volume: partition-2
+    - device: format-1
+      id: mount-1
+      path: /
+      type: mount
+    version: 1
+  swap:
+    swap: 0
+  updates: security
+  version: 1
+  shutdown: poweroff

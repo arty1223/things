@@ -1,0 +1,28 @@
+sm plugins list
+[SM] Listing 26 plugins:
+  01 "Reserved Slots" (1.11.0.6930) by AlliedModders LLC
+  02 "Basic Votes" (1.11.0.6930) by AlliedModders LLC
+  03 "Client Preferences" (1.11.0.6930) by AlliedModders LLC
+  04 "Admin Menu" (1.11.0.6930) by AlliedModders LLC
+  05 "Basic Commands" (1.11.0.6930) by AlliedModders LLC
+  06 "Admin File Reader" (1.11.0.6930) by AlliedModders LLC
+  07 "Player Commands" (1.11.0.6930) by AlliedModders LLC
+  08 "Admin Help" (1.11.0.6930) by AlliedModders LLC
+  09 "Sound Commands" (1.11.0.6930) by AlliedModders LLC
+  10 "[CS:GO] Franug Agents Chooser" (1.2.0) by Franc1sco franug, Romeo, TrueProfessional, Teamkiller324
+  11 "Basic Ban Commands" (1.11.0.6930) by AlliedModders LLC
+  12 "Fun Votes" (1.11.0.6930) by AlliedModders LLC
+  13 "Weapons & Knives" (1.7.7) by kgns | oyunhost.net
+  14 "Token Auto Updater" (1.4.1) by Phoenix (˙·٠●Феникс●٠·˙)
+  15 "Gloves" (1.0.5) by kgns | oyunhost.net
+  16 "Basic Comm Control" (1.11.0.6930) by AlliedModders LLC
+  17 "Basic Chat" (1.11.0.6930) by AlliedModders LLC
+  18 "[CS:GO] Music Kits Valve" (1.9.1) by iEx, Kento, crashzk, northeaster, ByDexter, Emur
+  19 "Nextmap" (1.11.0.6930) by AlliedModders LLC
+  20 "csutils" (1.3.4) by splewis/Deathknife
+  21 "Bot Mimic" (2.1) by Jannik "Peace-Maker" Hartung
+  22 "CS:GO PracticeMode" (1.3.4) by splewis
+  23 "Fun Commands" (1.11.0.6930) by AlliedModders LLC
+  24 "[CS:GO] Franug Voice Agents Enabler" (1.0) by Franc1sco franug
+  25 "Anti-Flood" (1.11.0.6930) by AlliedModders LLC
+  26 "Basic Info Triggers" (1.11.0.6930) by AlliedModders LLC

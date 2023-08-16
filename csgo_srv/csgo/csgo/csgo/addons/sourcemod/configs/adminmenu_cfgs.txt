@@ -1,0 +1,12 @@
+/**
+ * List config files here (relative to moddir) to have them added to the exec config menu list
+ * Left side is the filename, right side is the text to be added to the menu
+ */
+Configs
+{
+	"cfg/bounce.cfg"			"bounce"
+//	"cfg/warmup_end.cfg"		"warmup_end"
+//	"cfg/training_server.cfg"	"training server"
+	"cfg/restart_round.cfg"		"restart_round"
+	"cfg/restart.cfg"			"RESTART_SERVER"	
+}
