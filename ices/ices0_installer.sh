@@ -7,4 +7,7 @@ cd ices-0.4/
 sudo apt install lame
 sudo apt install libmp3lame-dev libxml2-dev libshout-dev libvorbis-dev
 ./configure --prefix=/usr/local --with-pic --with-lame
+cd ices-0.4/
+sudo make install
+cd -
 echo "Now you should setup ices.conf (located in cp /usr/local/etc/ices.conf.dist)"
